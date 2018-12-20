@@ -4,6 +4,7 @@
 	max-width: 1012px;
 	display: flex;
 	position: relative;
+	flex-direction: row;
 }
 
 .nav_items{
@@ -24,8 +25,7 @@
 }
 
 .Leftpanel, .Rightpanel{
-	position: sticky;
-    top: 0;
+	
     padding: 50px;
 }
 
@@ -44,11 +44,6 @@
 	height: 230px;
 	border-radius: 20px;
 }
-
-.parent{
-	margin-top: 50px;
-}
-
 .repo{
 	display: flex;
 	height: 100px;
@@ -152,6 +147,8 @@ li{
     left: 0;
     font-size: 25px;
     cursor: pointer;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 
 .btn_star{
@@ -169,7 +166,7 @@ li{
     right: 0;
 }
 .search_box{
-	width: 360px;
+	width: 310px;
 	height: 35px;
 	border-radius: 3px;
 	padding-left: 10px;
@@ -203,4 +200,38 @@ li{
     background-image: linear-gradient(-180deg,#34d058,#28a745 90%);
     color: #fff;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 1065px) {
+   .parent{
+    	flex-direction: column;
+  	}
+  	.Leftpanel{
+  		text-align: center;
+  	}
+  	div.name{
+  		position: sticky;
+  		top: 0;
+  	}
+  	.Rightpanel{
+  		    margin-top: -70px;
+  	}
+  	.nav_item{
+  		text-align: center;
+  	}
+  	.search_bar{
+  		flex-wrap: wrap;
+  		justify-content: center;
+  	}
+
+}
+@media only screen and (max-width: 680px) {
+  	.search_bar{
+  		height: 100px;
+  		justify-content:flex-start;
+  	}
+  	.repo{
+  		width: 350px;
+  	}
+
 }
