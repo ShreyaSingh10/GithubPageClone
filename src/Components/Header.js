@@ -3,10 +3,7 @@ import './styles.css';
 
 
 class Header extends React.Component {
-  state = {
-    //set status value to true to see the change
-  };
-
+   
   render() {
     return (
       <nav className="nav_items">

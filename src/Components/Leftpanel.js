@@ -2,10 +2,8 @@ import React from 'react';
 import './styles.css';
 import axios from 'axios';
 
-
 class Leftpanel extends React.Component {
   state = {
-    //set status value to true to see the change
     leftPanelData : '',
   };
 

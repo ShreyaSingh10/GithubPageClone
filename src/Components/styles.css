@@ -23,12 +23,6 @@
     z-index: 2;
 }
 
-li{
-	display: inline-block;
-	padding-left: 25px;
-	padding-right: 25px;
-}
-
 .Leftpanel, .Rightpanel{
 	position: sticky;
     top: 0;
@@ -49,6 +43,10 @@ li{
 	width: 230px;
 	height: 230px;
 	border-radius: 20px;
+}
+
+.parent{
+	margin-top: 50px;
 }
 
 .repo{
@@ -109,6 +107,13 @@ li{
 	border: 1px solid grey;
 	cursor: pointer;
 }
+
+li{
+	display: inline-block;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
 .nav_item{
 	border-bottom: 2px solid transparent;
     color: #586069;
@@ -118,7 +123,7 @@ li{
     padding: 0px 8px;
     text-align: center;
     cursor: pointer;
-   
+
 }
 .nav_item_selected{
 	border-bottom: 2px solid #e36209;
@@ -141,7 +146,7 @@ li{
 .repo_container{
 	padding-left: 0px;
 }
-h3{
+.repo_name{
 	display: inline-block;
 	position: absolute;
     left: 0;
